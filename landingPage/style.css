@@ -219,11 +219,18 @@ text-indent: 50px;
       text-align: center;
       margin-left: auto;
       margin-right: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-auto-flow: row;
       
       
   }
   nav {
     display: block;
+    grid-column: 1/3;
+  
+    
   }
   .has-border{
       
@@ -231,6 +238,7 @@ text-indent: 50px;
       margin-right: auto;
       color: red;
       background-color: black;
+      
       
       
   }
@@ -248,18 +256,31 @@ text-indent: 50px;
       height: auto;
       width: auto;
       color:black;
+      grid-column: 2;
+      grid-row: 5;
+      border: solid green 1px;
       
   }
   .profile.pic{
       margin-left: auto;
       margin-right: auto;
+      grid-column: 2;
+      grid-row: 3;
+      border: solid yellow 1px;
+
       
   }
   h1 {
     color: black;
+    grid-column: 2;
+    grid-row: 3;
+    border: solid red 1px;
   }
 h2{
   color: black;
+  grid-column: 2;
+    grid-row: 4;
+    border: solid orange 1px;
 }
 
   }
