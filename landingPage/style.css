@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(background3.jpg);
+    background-image: url(images/background3.jpg);
     background-repeat: no-repeat;
     background-size: 1600px 1000px;
     width: 100vw;
@@ -109,4 +109,160 @@ text-indent: 50px;
   .aboutMeHead{
     text-align: center;
     color: black;
+  }
+
+  @media (max-width: 900px) {
+    body{
+      
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+    
+    }
+    .has-border {
+      display: block;
+      border: solid 3px black;
+      text-align: center;
+      width: 100%;
+      padding: 2px;
+      font-size: 15px;
+      color: orange;
+      
+    }
+    h2 {
+      color: orange;
+    }
+    .logo{
+      width: 120px;
+      height: 120px;
+      
+    }
+    #profile-pic{
+      width: 100%;
+      height: auto;
+      margin: auto;
+
+    }
+    h1 {
+      color: orange;
+    }
+    button{
+      border: solid 2px black;
+      background: transparent;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      height: auto;
+      width: auto;
+      color:orange;
+  }
+  }
+
+  @media (max-width: 760px)
+  {
+    body {
+      width: auto;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      color: yellow;
+      justify-content: center;
+    }
+    .has-border {
+      display: block;
+      border: solid 1px black;
+      text-align: center;
+      font-size: 10px;
+      width: 100%;
+      padding: 2px;
+      color: yellow;
+    }
+    .logo{
+      width: 120px;
+      height: 120px;
+      
+    }
+    #profile-pic{
+      width: 100%;
+      height: auto;
+      margin: auto;
+
+    }
+    h2 {
+      color: yellow;
+    }
+    #portfolio{
+      text-align: center;
+      font-size: 10px;
+    }
+    h1 {
+      color: yellow;
+    }
+    button{
+      border: solid 2px black;
+      background: transparent;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      height: auto;
+      width: auto;
+      color:yellow;
+  }
+  
+
+  @media (max-width: 580px) {
+    body{
+      background-image: url(images/background3.jpg);
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      
+      
+  }
+  nav {
+    display: block;
+  
+    
+  }
+  .has-border{
+      
+      margin-left: auto;
+      margin-right: auto;
+      color: red;
+      background-color: black;
+      
+      
+      
+  }
+  .logo{
+      display: none;
+      
+  }
+  button{
+      border: solid 2px black;
+      background: transparent;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      letter-spacing: 0;
+      height: auto;
+      width: auto;
+      color:red;
+      border: solid red 1px;
+      
+  }
+  .profile.pic{
+      margin-left: auto;
+      margin-right: auto;
+
+      
+  }
+  h1 {
+    color: red;
+    }
+h2{
+  color: red;
+}
+
   }
