@@ -1,0 +1,221 @@
+body {
+	background-image: url(download.jpg);
+}
+
+.wrapper {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	align-items: center;
+	justify-content: space-between;
+	grid-template-areas:
+		"clock  h1 ."
+		"cal todo calc";
+	grid-gap: 3px;
+}
+.button:hover,
+.date:hover{
+	background-color: blue;
+}
+
+h1 {
+	grid-area: h1;
+}
+.calendar {
+	grid-area: cal;
+}
+.list {
+	grid-area: todo;
+}
+.calcBox {
+	grid-area: calc;
+}
+.clock {
+	grid-area: clock;
+	align-content: end;
+}
+
+h1 {
+	align-items: center;
+}
+.calculator {
+	width: 300px;
+	display: flex;
+	border: black 1px solid;
+	justify-content: center;
+	align-content: center;
+	background-image: url(download.jpg);
+	flex-wrap: wrap;
+}
+#display {
+	width: 94%;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: silver;
+	font-size: 10px;
+	text-align: right;
+
+}
+.button {
+	width: 22%;
+	height: 20px;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border: solid black 1px;
+	margin: 2px;
+	text-align: center;
+	background-color: silver;
+}
+.calendar {
+	width: 300px;
+	display: flex;
+	border: black 1px solid;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+.day {
+	width: 12%;
+	height: 20px;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border: solid black 1px;
+	margin: 2px;
+	text-align: center;
+}
+.date {
+	width: 12%;
+	height: 20px;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border: solid black 1px;
+	margin: 2px;
+	text-align: center;
+}
+
+.clock {
+	width: 190px;
+	height: 50px;
+	border: solid 5px black;
+	text-align: center;
+	font-size: 45px;
+	justify-self: auto;
+}
+.toDo {
+	width: 300px;
+	height: 200px;
+	box-sizing: border-box;
+	border: black 1px solid;
+	text-align: center;
+	background-image: url(download.jpg);
+}
+
+@media (max-width: 780px) {
+	.wrapper {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: 1fr 1fr;
+		/* align-items: center;
+			justify-content: space-between; */
+		grid-template-areas:
+			"h1  cal"
+			"todo calc";
+		grid-gap: 3px;
+	}
+	h1 {
+		grid-area: h1;
+		font-size: 6vw;
+	}
+	.calendar {
+		grid-area: cal;
+		width: 100%;
+		height: 100%;
+		margin: auto;
+	}
+	.list {
+		grid-area: todo;
+		height: 80%;
+		width: 100%;
+		margin: auto;
+	}
+	.calcBox{
+		grid-area: calc;
+	}
+	.calculator {
+		border: none;
+		margin: auto;
+	}
+	.clock {
+		display: none;
+		grid-area: clock;
+		align-content: end;
+		width: 190px;
+	}
+	.toDo {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+	@media (max-width: 400px) {
+		.wrapper {
+			width: 100%;
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows: 1fr 1fr 2fr 3fr;
+			/* align-items: center;
+				justify-content: space-between; */
+			grid-template-areas:
+				"clock"  
+				"h1"
+				"todo" 
+				"cal";
+				align-content: end;
+		}
+		h1 {
+			grid-area: h1;
+			font-size: 6vw;
+		}
+		.calendar {
+			grid-area: cal;
+			width: 100%;
+			height: 100%;
+		}
+		.list {
+			grid-area: todo;
+			height: 80%;
+			width: 100%;
+			margin: auto;
+		}
+		.calcBox {
+			grid-area: calc;
+			border: none;
+			margin: auto;
+			display: none;
+		}
+		.clock {
+			display: grid;
+			margin: auto;
+			grid-area: clock;
+			align-content: center;
+			width: 90px;
+			height: 45px;
+			border: solid 2px black;
+			text-align: center;
+			font-size: 25px;
+			justify-self: auto;
+		}
+		.toDo {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+
