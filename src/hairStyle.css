@@ -1,0 +1,68 @@
+body {
+	/* width: 960px; */
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	display: grid;
+	grid-column: 1fr 1fr 1fr;
+	grid-row: 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+		"header  header header"
+		"main main main"
+		"father actor nerd"
+		"footer footer footer";
+}
+header {
+	grid-area: header;
+	padding: 10px;
+	height: 200px;
+}
+main {
+	grid-area: main;
+	background-image: url(the-beacon.jpg);
+	height: 400px;
+	padding: 10px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.father {
+	grid-area: father;
+}
+.actor {
+	grid-area: actor;
+}
+.nerd {
+	grid-area: nerd;
+}
+footer {
+	grid-area: footer;
+}
+div {
+	padding: 10px;
+	height: 339px;
+}
+
+a {
+	color: black;
+}
+header {
+}
+main {
+}
+div {
+}
+ul {
+	list-style-type: none;
+}
+li {
+	border: black solid 1px;
+	padding-left: 27px;
+	padding-right: 27px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
