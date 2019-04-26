@@ -1,0 +1,50 @@
+body {
+	margin: 0 auto;
+	width: 850px;
+}
+main {
+	width: 850px;
+	height: 450px;
+	margin: 0 auto;
+	background-image: url(../images/PIA20051_hires.jpg);
+	color: white;
+}
+h1 {
+	margin: 0;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	font-size: 75px;
+}
+section {
+	display: flex;
+	height: 324px;
+	margin-top: 20px;
+
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: rgb(224, 222, 222);
+}
+article {
+	width: 270px;
+	height: 374px;
+	text-indent: 15px;
+	margin-top: 5px;
+}
+li {
+	list-style-type: none;
+	margin-top: 5px;
+}
+.name {
+	width: 80%;
+}
+.message {
+	width: 80%;
+	height: 100px;
+}
+
+button {
+	margin-top: 5px;
+}

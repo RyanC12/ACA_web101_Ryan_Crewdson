@@ -1,0 +1,159 @@
+body {
+	/* width: 960px; */
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	display: grid;
+	grid-column: 1fr 1fr 1fr;
+	grid-row: 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+		"header  header header"
+		"main main main"
+		"father actor nerd"
+		"footer footer footer";
+	background: no-repeat;
+}
+header {
+	grid-area: header;
+	padding: 10px;
+	height: 200px;
+}
+#mus {
+	border: none;
+}
+main {
+	grid-area: main;
+	background-image: url(../images/the-beacon.jpg);
+	height: 400px;
+	padding: 10px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* #trio {
+	grid-area: trio;
+	display: inline;
+	width: 960px;
+	height: 340px;
+} */
+.father {
+	grid-area: father;
+	width: 300px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.actor {
+	grid-area: actor;
+	width: 300px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.nerd {
+	grid-area: nerd;
+	width: 300px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+img {
+	border: solid black 1px;
+}
+p {
+	float: left;
+	margin-top: 50px;
+	margin-left: 20px;
+}
+nav {
+	text-decoration: none;
+}
+#footer {
+	grid-area: footer;
+	color: white;
+	background: black;
+	height: 125px;
+}
+div {
+	padding: 10px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+ul {
+	list-style-type: none;
+	float: right;
+	margin-right: 220px;
+}
+h2 {
+	width: 400px;
+	height: 60px;
+	padding-top: 22px;
+	font: 15px;
+	border: black solid 1px;
+	background-color: white;
+}
+li {
+	width: 340px;
+	height: 20px;
+	border: black solid 1px;
+	font: 15px;
+	padding-left: 27px;
+	padding-right: 27px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: black;
+	color: white;
+}
+button {
+	height: 55px;
+	width: 150px;
+	font: 16px;
+	margin-right: 255px;
+	background: #0ba39c;
+	text-align: center;
+	text-transform: uppercase;
+}
+#logo {
+	display: inline;
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+.twitter {
+	width: 44px;
+	height: 44px;
+}
+.facebook {
+	width: 44px;
+	height: 44px;
+}
+.pint {
+	width: 44px;
+	height: 44px;
+}
+.google {
+	width: 44px;
+	height: 44px;
+}
+/* p {
+	widows: 340px;
+	height: 20px;
+	border: black solid 1px;
+	padding-left: 27px;
+	padding-right: 27px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	margin-left: 0px;
+	margin-right: 0px;
+} */

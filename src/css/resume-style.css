@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+div {
+    /* background-color: blue; */
+     float: left;
+     width: 50%;
+     height: 1600px;
+ }
+
+article {
+    /*background-color: gray;*/
+    float: left;
+    width: 50%;
+    height: 1600px;
+
+}
+
+
+
+/*footer {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}*/
+
