@@ -1,43 +1,90 @@
 body {
-	background-image: url(../images/download.jpg);
+	/* background-image: url(../images/download.jpg); */
+	background-color: #2E2F33;
+	/* background: no-repeat; */
 }
 
 .wrapper {
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-rows: 1fr 2fr;
 	align-items: center;
 	justify-content: space-between;
 	grid-template-areas:
-		"clock  h1 ."
+		"p  h1 clock"
 		"cal todo calc";
 	grid-gap: 3px;
 }
 .button:hover,
 .date:hover{
-	background-color: blue;
+	background-color: #578430;
 }
 
 h1 {
 	grid-area: h1;
+	text-align: center;
+	color: white;
+	-webkit-text-stroke: 1px #d110db; 
+}
+p{
+	grid-area: p;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 45px;
+	-webkit-text-stroke: 1px #d110db; 
+
+
 }
 .calendar {
 	grid-area: cal;
+	width: 300px;
+	display: flex;
+	border: #d110db 1px solid;
+	color: white;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	margin-left: auto;
+	margin-right: auto;
 }
 .list {
 	grid-area: todo;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: auto;
+	padding-right: auto;
 }
 .calcBox {
 	grid-area: calc;
+
 }
 .clock {
 	grid-area: clock;
 	align-content: end;
+	color: white;
+	width: 190px;
+	height: 50px;
+	border: solid 5px #d110db;
+	text-align: center;
+	font-size: 45px;
+	justify-self: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: auto;
+	padding-right: auto;
+	-webkit-text-stroke: 1px #d110db; 
+
+
 }
+
 
 h1 {
 	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: auto;
+	padding-right: auto;
 }
 .calculator {
 	width: 300px;
@@ -47,6 +94,10 @@ h1 {
 	align-content: center;
 	background-image: url(../images/download.jpg);
 	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: auto;
+	padding-right: auto;
 }
 #display {
 	width: 94%;
@@ -57,7 +108,8 @@ h1 {
 	background-color: silver;
 	font-size: 10px;
 	text-align: right;
-
+	border: #d110db 1px solid;
+	margin-left: 2px;
 }
 .button {
 	width: 22%;
@@ -65,25 +117,20 @@ h1 {
 	justify-content: space-between;
 	flex-direction: row;
 	flex-wrap: wrap;
-	border: solid black 1px;
+	border: solid #d110db 1px;
 	margin: 2px;
 	text-align: center;
 	background-color: silver;
+	color: white;
 }
-.calendar {
-	width: 300px;
-	display: flex;
-	border: black 1px solid;
-	flex-wrap: wrap;
-	align-items: flex-end;
-}
+
 .day {
 	width: 12%;
 	height: 20px;
 	justify-content: space-between;
 	flex-direction: row;
 	flex-wrap: wrap;
-	border: solid black 1px;
+	border: solid #d110db 1px;
 	margin: 2px;
 	text-align: center;
 }
@@ -93,26 +140,24 @@ h1 {
 	justify-content: space-between;
 	flex-direction: row;
 	flex-wrap: wrap;
-	border: solid black 1px;
+	border: solid #d110db 1px;
 	margin: 2px;
 	text-align: center;
 }
 
-.clock {
-	width: 190px;
-	height: 50px;
-	border: solid 5px black;
-	text-align: center;
-	font-size: 45px;
-	justify-self: auto;
-}
+
 .toDo {
 	width: 300px;
 	height: 200px;
 	box-sizing: border-box;
-	border: black 1px solid;
+	border: #d110db 1px solid;
 	text-align: center;
-	background-image: url(../images/download.jpg);
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: auto;
+	padding-right: auto;
+	opacity: .5;
+
 }
 
 @media (max-width: 780px) {
