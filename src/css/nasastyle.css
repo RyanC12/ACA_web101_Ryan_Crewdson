@@ -48,3 +48,16 @@ li {
 button {
 	margin-top: 5px;
 }
+@media (max-width: 580px) {
+	.wrapper {
+		width: 580px;
+		height: 200px;
+	}
+	section {
+		display: flex;
+		flex-direction: column;
+		height: 640px;
+		background-color: gray;
+		align-items: center;
+	}
+}
