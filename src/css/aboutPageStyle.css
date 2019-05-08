@@ -1,0 +1,74 @@
+body {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 100px 1fr 40px;
+	background: no-repeat;
+	width: 100%;
+	height: 100%;
+	background-color: #333333;
+}
+header {
+	width: 100%;
+	height: 80px;
+	grid-column: 1/3;
+	grid-row: 1/2;
+	color: white;
+	padding-left: auto;
+	padding-right: auto;
+	text-align: center;
+	border: 2px solid #0fd012;
+}
+.about::before {
+	background-image: url(../images/aboutmebg.PNG);
+	background-size: cover;
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 77%;
+	opacity: 0.1;
+}
+/* .myWork::before {
+    background-image: url(../images/myworkbg.PNG);
+    background-image: url(../images/aboutmebg.PNG);
+	opacity: 0.2;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+} */
+.about {
+	/* border: 1px solid red; */
+	grid-column: 1/2;
+	grid-row: 2/3;
+	height: 99%;
+	text-align: center;
+	border: 2px solid #0fd012;
+}
+
+p {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+address {
+	/* grid-column: 1/2;
+	grid-row: 3/4; */
+	border: 2px solid #0fd012;
+	/* text-align: center; */
+	/* margin-top: 350px; */
+	width: 100%;
+	margin-top: 359px;
+}
+.myWork {
+	/* border: 1px solid green; */
+	grid-column: 2/3;
+	grid-row: 2/3;
+	height: 500px;
+	border: 2px solid #0fd012;
+}
+
+h2 {
+	text-align: center;
+}
