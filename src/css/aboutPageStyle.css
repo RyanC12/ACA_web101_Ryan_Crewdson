@@ -13,10 +13,15 @@ header {
 	grid-column: 1/3;
 	grid-row: 1/2;
 	color: white;
-	padding-left: auto;
-	padding-right: auto;
-	text-align: center;
 	border: 2px solid #0fd012;
+	position: fixed;
+	float: left;
+}
+.menu {
+	display: inline;
+	list-style-type: none;
+	padding: 15px 20px;
+	border: red solid 2px;
 }
 .about::before {
 	background-image: url(../images/aboutmebg.PNG);
