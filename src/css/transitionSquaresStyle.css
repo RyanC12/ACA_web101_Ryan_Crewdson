@@ -1,0 +1,72 @@
+body {
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+#boxes {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: none;
+	flex-wrap: wrap;
+}
+div {
+	width: 25px;
+	height: 25px;
+	border: solid 1px;
+	margin: 7px 10px 10px 10px;
+}
+#boxes:hover div:nth-child(odd) {
+	width: 50px;
+	height: 50px;
+	border: solid 1px black;
+	transform: translate(100px) rotate(360deg);
+	transition-duration: 5s;
+
+	/* transition-timing-function: ; */
+}
+#boxes:hover div:nth-child(even) {
+	width: 12.5px;
+	height: 12.5px;
+	border: solid 1px black;
+	transform: translate(-100px) rotate(-360deg);
+	transition-duration: 5s;
+}
+.box1 {
+	background-color: blue;
+}
+.box2 {
+	background-color: gold;
+}
+.box3 {
+	background-color: grey;
+}
+.box4 {
+	background-color: aqua;
+}
+.box5 {
+	background-color: red;
+}
+.box6 {
+	background-color: teal;
+}
+.box7 {
+	background-color: salmon;
+}
+.box8 {
+	background-color: purple;
+}
+.box9 {
+	background-color: yellow;
+}
+.box10 {
+	background-color: orange;
+}
+.box11 {
+	background-color: green;
+}
+.box12 {
+	background-color: pink;
+}
