@@ -16,6 +16,8 @@ header {
 	border: 2px solid #0fd012;
 	position: fixed;
 	float: left;
+	margin-top: 0;
+	padding-top: 0;
 }
 .menu {
 	display: inline;
@@ -24,7 +26,7 @@ header {
 	border: red solid 2px;
 }
 .about::before {
-	background-image: url(../images/aboutmebg.PNG);
+	/* background-image: url(../images/aboutmebg.PNG); */
 	background-size: cover;
 	content: "";
 	display: block;
@@ -76,4 +78,5 @@ address {
 
 h2 {
 	text-align: center;
+	font-size: 80px;
 }
