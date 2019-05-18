@@ -4,15 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="stylesheet" style="text/css" href="css/dashboardStyle.css" />
-		<script
-			src="https://code.jquery.com/jquery-1.12.3.js"
-			integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc="
-			crossorigin="anonymous"
-		></script>
-		<script src="js/your_js_file.js"></script>
+		<link rel="stylesheet" href="css/dashboardStyle.css" />
 		<title>Dashboard</title>
 	</head>
+
 	<body>
 		<div class="wrapper">
 			<h1>
@@ -175,14 +170,26 @@
 				<div class="date">30</div>
 			</div>
 
-			<ul>
-				<li class="item">Buy movie tickets</li>
-			</ul>
-			<div id="newItemButton"><button href="#">new item</button></div>
-			<form id="newItemForm">
-				<input type="text" id="itemField" placeholder="Item" />
-				<input type="submit" id="add" value="add" />
-			</form>
+			<!-- <form class="list"> -->
+
+			<div class="list">
+				<ul>
+					<li class="item">
+						Test
+					</li>
+				</ul>
+				<div id="newItem">
+					<input class="targetBox" type="text" name="listItem" />
+					<button id="add">Add Item</button>
+				</div>
+				<!-- </form> -->
+			</div>
 		</div>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+		<script src="./scripts/dashoboard.js"></script>
 	</body>
 </html>
