@@ -1,35 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>TicTacToe | Johnny Juarez</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="./css/ticTacToeStyle.css" />
-		<script src="./scripts/ticTacToe.js"></script>
-		<title>Document</title>
 	</head>
-	<body class="score">
-		<header>
-			scoreboard
-		</header>
 
-		<div class="wrapper">
-			<div class="tic" onclick="placeMark()"></div>
-			<div class="tic" onclick="placeMark()"></div>
-			<div class="tic" onclick="placeMark()"></div>
-			<div class="tic" onclick="placeMark()"></div>
-			<div class="tic" onclick="placeMark()"></div>
-			<div class="tic" onclick="placeMark()"></div>
-			<div class="tic" onclick="placeMark()"></div>
-			<div class="tic" onclick="placeMark()"></div>
-			<div class="tic" onclick="placeMark()"></div>
-		</div>
-		<footer>
-			<button onclick="changeMarkerToX();">X</button>
-			<button onclick="changeMarkerToO();">O</button>
-		</footer>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="#">upgrade your browser</a> to improve your experience.
+			</p>
+		<![endif]-->
+		<h1>Tic Tac Toe</h1>
 
-		<button type="button" onclick="changeMarkerToX()">X</button>
-		<button onclick="changeMarkerToO();">O</button>
+		<table>
+			<tr>
+				<td><div id="cell1" class="box" onclick="placeMark(this)"></div></td>
+				<td class="vert">
+					<div id="cell2" class="box" onclick="placeMark(this)"></div>
+				</td>
+				<td><div id="cell3" class="box" onclick="placeMark(this)"></div></td>
+			</tr>
+			<tr>
+				<td class="horiz">
+					<div id="cell4" class="box" onclick="placeMark(this)"></div>
+				</td>
+				<td class="vert horiz">
+					<div id="cell5" class="box" onclick="placeMark(this)"></div>
+				</td>
+				<td class="horiz">
+					<div id="cell6" class="box" onclick="placeMark(this)"></div>
+				</td>
+			</tr>
+			<tr>
+				<td><div id="cell7" class="box" onclick="placeMark(this)"></div></td>
+				<td class="vert">
+					<div id="cell8" class="box" onclick="placeMark(this)"></div>
+				</td>
+				<td><div id="cell9" class="box" onclick="placeMark(this)"></div></td>
+			</tr>
+		</table>
+
+		<button class="reset">Reset</button>
+		<script src="./scripts/ticTacToe.js"></script>
 	</body>
 </html>
