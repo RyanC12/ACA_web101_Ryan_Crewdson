@@ -121,6 +121,7 @@ h1 {
 	text-align: right;
 	border: #d110db 1px solid;
 	margin-left: 2px;
+	color: black;
 }
 .button {
 	width: 22%;
@@ -132,7 +133,7 @@ h1 {
 	margin: 2px;
 	text-align: center;
 	background-color: silver;
-	color: white;
+	color: black;
 }
 
 .day {
