@@ -8,10 +8,11 @@ body {
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 2fr;
+	grid-template-rows: 150px 1fr 2fr;
 	align-items: center;
 	justify-content: space-between;
 	grid-template-areas:
+		"button loc ."
 		"p  h1 clock"
 		"cal todo calc";
 	grid-gap: 3px;
@@ -20,7 +21,23 @@ body {
 .date:hover {
 	background-color: #578430;
 }
-
+.locButton {
+	grid-area: button;
+	height: 20px;
+	width: 100px;
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#location {
+	grid-area: loc;
+	border: 1px solid black;
+	width: 200px;
+	height: 100px;
+	float: right;
+	margin: auto;
+	color: white;
+}
 h1 {
 	grid-area: h1;
 	text-align: center;
@@ -218,6 +235,12 @@ input:focus {
 		width: 100%;
 		height: 100%;
 	}
+	.location {
+		display: none;
+	}
+	.locButton {
+		display: none;
+	}
 }
 
 @media (max-width: 400px) {
@@ -271,5 +294,11 @@ input:focus {
 	.toDo {
 		width: 100%;
 		height: 100%;
+	}
+	.location {
+		display: none;
+	}
+	.locButton {
+		display: none;
 	}
 }

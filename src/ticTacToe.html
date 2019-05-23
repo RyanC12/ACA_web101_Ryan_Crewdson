@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>TicTacToe</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./css/ticTacToeStyle.css" />
+	</head>
+
+	<body>
+		<h1>Tic Tac Toe</h1>
+
+		<table>
+			<tr>
+				<td><div id="cell1" class="box" onclick="placeMark(this)"></div></td>
+				<td class="vert">
+					<div id="cell2" class="box" onclick="placeMark(this)"></div>
+				</td>
+				<td><div id="cell3" class="box" onclick="placeMark(this)"></div></td>
+			</tr>
+			<tr>
+				<td class="horiz">
+					<div id="cell4" class="box" onclick="placeMark(this)"></div>
+				</td>
+				<td class="vert horiz">
+					<div id="cell5" class="box" onclick="placeMark(this)"></div>
+				</td>
+				<td class="horiz">
+					<div id="cell6" class="box" onclick="placeMark(this)"></div>
+				</td>
+			</tr>
+			<tr>
+				<td><div id="cell7" class="box" onclick="placeMark(this)"></div></td>
+				<td class="vert">
+					<div id="cell8" class="box" onclick="placeMark(this)"></div>
+				</td>
+				<td><div id="cell9" class="box" onclick="placeMark(this)"></div></td>
+			</tr>
+		</table>
+
+		<button class="reset">Reset</button>
+		<script src="./scripts/ticTacToe.js"></script>
+	</body>
+</html>
