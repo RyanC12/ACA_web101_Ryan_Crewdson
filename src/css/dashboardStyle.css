@@ -12,7 +12,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	grid-template-areas:
-		". loc ."
+		"button loc ."
 		"p  h1 clock"
 		"cal todo calc";
 	grid-gap: 3px;
@@ -22,16 +22,18 @@ body {
 	background-color: #578430;
 }
 .locButton {
+	grid-area: button;
 	height: 20px;
 	width: 100px;
 	margin-top: 70px;
-	margin-left: 25px;
+	margin-left: auto;
+	margin-right: auto;
 }
 #location {
 	grid-area: loc;
 	border: 1px solid black;
-	width: 150px;
-	height: 60px;
+	width: 200px;
+	height: 100px;
 	float: right;
 	margin: auto;
 	color: white;
