@@ -238,6 +238,9 @@ input:focus {
 	.location {
 		display: none;
 	}
+	.locButton {
+		display: none;
+	}
 }
 
 @media (max-width: 400px) {
@@ -293,6 +296,9 @@ input:focus {
 		height: 100%;
 	}
 	.location {
+		display: none;
+	}
+	.locButton {
 		display: none;
 	}
 }
