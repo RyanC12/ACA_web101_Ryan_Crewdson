@@ -1,5 +1,12 @@
+body {
+	display: grid;
+	grid-template-rows: 80px 2fr 1fr;
+}
+
 h1 {
 	text-align: center;
+	grid-row: 1/2;
+	padding: 0px;
 }
 
 td {
@@ -9,6 +16,7 @@ td {
 
 table {
 	margin: 5% auto;
+	grid-row: 2/3;
 }
 
 .vert {
@@ -27,4 +35,12 @@ table {
 	text-align: center;
 	font-size: 50px;
 	margin: auto;
+}
+.reset {
+	grid-row: 3/4;
+	width: 100px;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
 }
