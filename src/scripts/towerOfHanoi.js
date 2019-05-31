@@ -1,17 +1,13 @@
-"use strict";
+let $block = null;
 
-$(document).ready(function() {
-	let $block = null;
-
-	$("[data-row]").click(function() {
-		if ($block) {
-			$(this).append($block);
-			$block = null;
-		} else {
-			$block = $(this)
-				.children()
-				.last()
-				.detach();
-		}
-	});
+$(".column").click(function() {
+	if ($block) {
+		$(this).append($block);
+		$block = null;
+	} else {
+		$block = $(this)
+			.children()
+			.last()
+			.detach();
+	}
 });
