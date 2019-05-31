@@ -1,6 +1,8 @@
 body {
 	display: grid;
 	grid-template-rows: 80px 2fr 1fr;
+	background-color: black;
+	color: white;
 }
 
 h1 {
@@ -20,13 +22,13 @@ table {
 }
 
 .vert {
-	border-right: 2px solid black;
-	border-left: 2px solid black;
+	border-right: 2px solid white;
+	border-left: 2px solid white;
 }
 
 .horiz {
-	border-bottom: 2px solid black;
-	border-top: 2px solid black;
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
 }
 
 .box {
