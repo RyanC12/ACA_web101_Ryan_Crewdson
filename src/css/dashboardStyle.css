@@ -12,7 +12,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	grid-template-areas:
-		"button loc ."
+		"sR sR1 loc"
 		"p  h1 clock"
 		"cal todo calc";
 	grid-gap: 3px;
@@ -21,8 +21,45 @@ body {
 .date:hover {
 	background-color: #578430;
 }
+
+/* clicker game */
+/* #stressReliever {
+	grid-area: sR;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+} */
+
+#bug {
+	width: 100px;
+	height: 100px;
+	grid-area: sR;
+	margin: auto;
+}
+#currentTotal {
+	width: 100px;
+	height: 25px;
+	border: solid black 1px;
+	color: white;
+	margin: auto;
+}
+.cost {
+	grid-area: sR1;
+	width: 120px;
+	height: 20px;
+	border: solid black 1px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	text-align: center;
+	padding: auto;
+	color: white;
+	margin: auto;
+}
+/* clicker game */
+
 .locButton {
-	grid-area: button;
+	/* grid-area: button; */
 	height: 20px;
 	width: 100px;
 	margin-top: 70px;
@@ -31,10 +68,10 @@ body {
 }
 #location {
 	grid-area: loc;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	width: 200px;
 	height: 100px;
-	float: right;
+	/* float: right; */
 	margin: auto;
 	color: white;
 }

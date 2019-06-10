@@ -5,6 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link rel="stylesheet" href="css/dashboardStyle.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
 		<title>Dashboard</title>
 	</head>
 
@@ -16,8 +21,9 @@
 			</h1>
 			<p>4/26/19</p>
 
-			<div id="location"></div>
-			<button class="locButton" onclick="myLocation()">Location</button>
+			<div id="location">
+				<button class="locButton" onclick="myLocation()">Location</button>
+			</div>
 
 			<div class="calcBox">
 				<form name="calculator">
@@ -188,16 +194,36 @@
 				</div>
 				<!-- </form> -->
 			</div>
+
+			<br />
+			<img src="./images/Green_bug.svg.png" alt="Green Bug" id="bug" />
+
+			<div id="stressReliever">
+				<!-- <br /> -->
+				<!-- Smash -->
+				<div id="currentTotal"></div>
+				<div id="cost">
+					<div class="cost" data-val="1" data-cost="50">
+						Something: <span>50</span>
+					</div>
+					<div class="cost" data-val="2" data-cost="100">
+						Something: <span>100</span>
+					</div>
+					<div class="cost" data-val="10" data-cost="1000">
+						Something: <span>1000</span>
+					</div>
+					<div class="cost" data-val="100" data-cost="10000">
+						Something: <span>10000</span>
+					</div>
+				</div>
+			</div>
 		</div>
-		<script
+
+		<!-- <script
 			src="https://code.jquery.com/jquery-3.4.1.min.js"
 			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 			crossorigin="anonymous"
-		></script>
-		<<<<<<< HEAD
-		<script src="./scripts/dashoboard.js"></script>
-		=======
+		></script> -->
 		<script src="./scripts/dashboard.js"></script>
-		>>>>>>> geolocation
 	</body>
 </html>

@@ -14,8 +14,8 @@ $("#bug").on("click", function() {
 
 $(".button").on("click", function() {
 	if ($(this).data("cost") < clickCount) {
-		if ($(this).data("cost") === 10) {
-			clickCount -= 10;
+		if ($(this).data("cost") === 50) {
+			clickCount -= 50;
 			enhancedClicks += $(this).data("val");
 		} else if ($(this).data("cost") === 100) {
 			clickCount -= 100;
